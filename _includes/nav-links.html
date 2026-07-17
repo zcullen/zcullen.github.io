@@ -1,0 +1,44 @@
+{% assign link_base = "py-1 transition duration-200 ease-in-out relative block font-medium" %}
+{% assign inactive = "hover:translate-x-2px hover:text-gray-900 text-gray-600" %}
+<li class="{{ include.li_class }}">
+  <a href="/"
+    class="{{ link_base }} {% if include.active == 'about' %}text-blue-600{% else %}{{ inactive }}{% endif %}"
+  >
+    <span class="relative">About Me</span>
+  </a>
+</li>
+<li class="{{ include.li_class }}">
+  <a href="/research/"
+    class="{{ link_base }} {% if include.active == 'research' %}text-blue-600{% else %}{{ inactive }}{% endif %}"
+  >
+    <span class="relative">Research</span>
+  </a>
+</li>
+<li class="{{ include.li_class }}">
+  <a href="/teaching/"
+    class="{{ link_base }} {% if include.active == 'teaching' %}text-blue-600{% else %}{{ inactive }}{% endif %}"
+  >
+    <span class="relative">Teaching</span>
+  </a>
+</li>
+<li class="{{ include.li_class }}">
+  <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=879471"
+    class="{{ link_base }} {{ inactive }}"
+  >
+    <span class="relative">Official Website</span>
+  </a>
+</li>
+<li class="{{ include.li_class }}">
+  <a href="https://scholar.google.com/citations?user=Be35w_QAAAAJ&hl=en"
+    class="{{ link_base }} {{ inactive }}"
+  >
+    <span class="relative">Google Scholar</span>
+  </a>
+</li>
+<li class="{{ include.li_class }}">
+  <a href="/assets/docs/Cullen_Zoe_CV_202509.pdf"
+    class="{{ link_base }} {{ inactive }}"
+  >
+    <span class="relative">CV</span>
+  </a>
+</li>
