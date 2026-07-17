@@ -1,4 +1,5 @@
-﻿
+---
+---
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -61,142 +62,10 @@ details.inline-details[open] summary {
 
   </head>
   <body>
-    <div id="header" class="md:static w-full h-auto lg:hidden py-4 px-12 shadow">
-      <ul class="flex">
-  <li class="flex flex-shrink-0 flex-grow font-bold text-xl mr-12 md:block hidden">
-    Zoë B Cullen
-  </li>
-  
-  
-  <li class="mr-6">
-    
-    <a href="./"
-    class="py-1 transition duration-200 ease-in-out relative block font-medium text-blue-600"
-    >
-    <span class="relative">About Me</span>
-    </a>
-    
-  </li>
-  
-  <li class="mr-6">
-    
-    <a href="./research/"
-    class="py-1 transition duration-200 ease-in-out relative block font-medium hover:text-gray-900 text-gray-600"
-    >
-    <span class="relative">Research</span>
-    </a>
-    
-  </li>
-  
-  <li class="mr-6">
-    <a href="./teaching/"
-    class="py-1 transition duration-200 ease-in-out relative block font-medium hover:text-gray-900 text-gray-600"
-    >
-    <span class="relative">Teaching</span>
-    </a>
-  </li>
-  <li class="mr-6">
-    <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=879471"
-    class="py-1 transition duration-200 ease-in-out relative block font-medium hover:text-gray-900 text-gray-600"
-    >
-    <span class="relative">Official Website</span>
-    </a>
-  </li>
-  <li class="mr-6">
-    <a href="https://scholar.google.com/citations?user=Be35w_QAAAAJ&hl=en"
-    class="py-1 transition duration-200 ease-in-out relative block font-medium hover:text-gray-900 text-gray-600"
-    >
-    <span class="relative">Google Scholar</span>
-    </a>
-  </li>
-  <li class="mr-6">
-    <a href="./assets/docs/Cullen_Zoe_CV_202509.pdf"
-    class="py-1 transition duration-200 ease-in-out relative block font-medium hover:text-gray-900 text-gray-600"
-    >
-    <span class="relative">CV</span>
-    </a>
-  </li>
-
-  </div>
-</ul>
-
-    </div>
+    {% include header.html active="about" %}
     <div class="w-full max-w-screen-xl mx-auto px-6">
       <div class="lg:flex -mx-6">
-        <div id="sidebar" class="fixed h-full w-full lg:static lg:h-auto lg:overflow-y-visible lg:block lg:border-0 lg:w-1/4 hidden pt-16">
-          <div id="sidebar-wrapper" class="lg:pl-12 md:pl-6 h-full overflow-y-auto scrolling-touch lg:h-auto lg:block lg:sticky overflow-hidden">
-            <div>
-  <img class="w-full rounded"
-    src="./assets/img/zcullen.jpg" alt="Headshot"
-    style="transform: scaleX(-1);-webkit-transform: scaleX(-1);"
-  >
-  <div class="pt-4 mt-4">
-    <div class="font-bold text-xl mb-2">Zoë B Cullen</div>
-    <div class="text-gray-700 text-base">
-      <p>Associate Professor</p>
-      <p>Harvard Business School</p>
-    </div>
-    <nav class="pt-6 text-base">
-      <ul>
-        
-        
-        <li>
-          
-          <a href="./"
-            class="py-1 transition duration-200 ease-in-out relative block font-medium text-blue-600"
-          >
-            <span class="relative">About Me</span>
-          </a>
-          
-        </li>
-        
-        <li>
-
-          <a href="./research/"
-            class="py-1 transition duration-200 ease-in-out relative block font-medium hover:text-gray-900 text-gray-600"
-          >
-            <span class="relative">Research</span>
-          </a>
-
-        </li>
-
-        <li>
-          <a href="./teaching/"
-            class="py-1 transition duration-200 ease-in-out relative block font-medium hover:text-gray-900 text-gray-600"
-          >
-            <span class="relative">Teaching</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=879471"
-            class="py-1 transition duration-200 ease-in-out relative block font-medium hover:text-gray-900 text-gray-600"
-          >
-            <span class="relative">Official Website</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://scholar.google.com/citations?user=Be35w_QAAAAJ&hl=en"
-            class="py-1 transition duration-200 ease-in-out relative block font-medium hover:text-gray-900 text-gray-600"
-          >
-            <span class="relative">Google Scholar</span>
-          </a>
-        </li>
-        <li>
-          <a href="./assets/docs/Cullen_Zoe_CV_202509.pdf"
-            class="py-1 transition duration-200 ease-in-out relative block font-medium hover:text-gray-900 text-gray-600"
-          >
-            <span class="relative">CV</span>
-          </a>
-        </li>
-
-      </ul>
-    </nav>
-  </div>
-</div>
-
-          </div>
-        </div>
+        {% include sidebar.html active="about" %}
         <div id="content-wrapper"
           class="lg:px-12 md:px-6 min-h-screen w-full lg:static lg:overflow-y-scroll lg:w-3/4 pt-16 lg:max-h-screen"
         >
