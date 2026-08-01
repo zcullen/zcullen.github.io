@@ -1,2 +1,14 @@
+# macOS
 .DS_Store
+._*
 
+# Editor / tooling
+# Only the personal settings file — .claude/launch.json is shared config
+# and stays tracked.
+.claude/settings.local.json
+.vscode/
+.idea/
+
+# Working notes — kept locally, not published to zoecullen.com
+website notes.txt
+research/abstracts from working papers.html
