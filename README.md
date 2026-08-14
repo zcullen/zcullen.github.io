@@ -70,7 +70,7 @@ This is a static website hosted on GitHub Pages showcasing academic research, pu
 ### Updating CV
 
 1. Upload new CV PDF to `assets/docs/`
-2. Update the CV link in both `index.html` and `research/index.html`
+2. Update the CV link in `_includes/nav-links.html` (shared by all pages)
 
 ## Deployment
 
